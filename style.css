@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light gray background for neutrality */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.todo-container {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #292626; /* Vibrant orange for the heading */
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.task-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 75%;
+    padding: 12px;
+    border: 2px solid #03a9f4; /* Vibrant blue border for input */
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff5722; /* Change border to orange when focused */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #03a9f4; /* Vibrant blue for the add button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 20%;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0288d1; /* Darker blue on hover */
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters button {
+    padding: 12px;
+    background-color: #8bc34a; /* Vibrant green for filter buttons */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #7cb342; /* Darker green on hover */
+}
+
+#taskHeading {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #03a9f4; /* Vibrant blue for task filter heading */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #e1f5fe; /* Light blue background for tasks */
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #b3e5fc; /* Slightly darker blue on hover */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.delete-btn {
+    background-color: #ff7043; /* Vibrant orange for delete button */
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background-color: #f4511e; /* Darker orange on hover */
+}
